@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    margin-top: 100px;
+}
+
+button{
+    border-radius: 8px;
+}
+
+#results{
+    color: yellowgreen;
+    font-size: 30px;
+}
