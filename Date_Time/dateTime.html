@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+</head>
+<body>
+    <h1>Date and Time</h1>
+
+    <input type="datetime-local" id="dateinput">
+    <button onclick="getDateTime()">Date Get</button>
+
+</body>
+
+<script>
+
+// let date = new Date();
+// document.write(date); 
+
+// document.write(" Day :" + date.getDay())
+
+// document.write(" Month : " + date.getMonth());
+// document.write(" Date : ", + date.getDate());
+// document.write(" Year : ", + date.getFullYear());
+
+// document.write(" Hour : " + date.getHours());
+// document.write(" Minute : " + date.getMinutes());
+// document.write(" Second : " + date.getSeconds());
+
+
+//let costumDate = new Date("09/04/2024")
+// document.write(costumDate)
+
+const months = ['January','February','March','April','May','June','July','August','September','October', 'November', 'Decrmber'];
+const days = ['Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday', 'Sunday']
+
+document.write(months[costumDate.getMonth()])
+
+document.write(days[costumDate.getDay()])
+
+
+
+// ===============================================================================================================
+
+function getDateTime(){
+    let date = document.getElementById("dateinput").value;
+    let dateTime = new Date(date);
+    document.write(months[dateTime.getMonth()]);
+    document.write(days[dateTime.getDay()]);
+    document.write(dateTime.getFullYear());
+
+    document.write(" Hours : " + dateTime.getHours());
+    document.write(" Minutes : " + dateTime.getMinutes());
+    //document.write(dateTime.getSeconds());
+}
+
+</script>
+
+</html>
